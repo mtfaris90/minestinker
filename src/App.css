@@ -1,3 +1,59 @@
 .App {
   text-align: center;
 }
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+
+.title {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minesCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  padding: 2%;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  padding: 2%;
+}
+
+.board {
+  height: 600px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.tile {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  text-align: center;
+  border: black 1px solid;
+  margin: 0.1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

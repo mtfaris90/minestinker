@@ -13,8 +13,8 @@ const createField = (rows, cols, mines) => {
       line.push({
         value: 0,
         revealed: false,
-        x: i,
-        y: j,
+        row: i,
+        col: j,
         flagged: false,
       });
     }

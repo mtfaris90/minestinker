@@ -1,12 +1,15 @@
-const Tile = ({ obj }) => {
+const Tile = ({ obj, raiseFlag, revealTile }) => {
   return (
     <>
-      <h3>Tile</h3>
-      <div>{`flagged = ${obj.flagged} `}</div>
-      <div>{`revealed = ${obj.revealed} `}</div>
-      <div>{`value = ${obj.value} `}</div>
-      <div>{`x = ${obj.x} `}</div>
-      <div>{`y = ${obj.y} `}</div>
+      <div
+        style={obj.revealed ? { backgroundColor: "lightgrey" } : {}}
+        onClick={() => revealTile(obj.row, obj.col)}
+        onContextMenu={(e) => raiseFlag(e, obj.row, obj.col)}
+        className="tile"
+      >
+        {obj.revealed && obj.value !== 0 ? obj.value : ""}
+        {/* {obj.value} */}
+      </div>
     </>
   );
 };
