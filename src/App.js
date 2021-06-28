@@ -13,6 +13,7 @@ function App() {
   const [r, setR] = useState(0);
   const [c, setC] = useState(0);
   const [m, setM] = useState(0);
+  
 
   const startGame = (e, selected, rows, cols, mines) => {
     e.preventDefault();
