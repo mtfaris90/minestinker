@@ -1,54 +1,71 @@
 .App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  background-image: url("https://media.istockphoto.com/vectors/seamless-doodle-dogs-colorful-background-vector-id1006940504?k=6&m=1006940504&s=612x612&w=0&h=ZlONrOUVgU3pPAaGi1lITFRAMbj1fC4qXCdCsNXNcfE=");
+  background-repeat: repeat-x;
 }
 
 .header {
-  height: 100px;
+  height: 20%;
   display: flex;
   justify-content: space-evenly;
   padding: 2%;
 }
 
 .title {
+  background-color: white;
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 2%;
 }
 
 .flagsCounter {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px black solid;
+  border-radius: 5px;
   padding: 2%;
 }
 
 .timer {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px black solid;
+  border-radius: 5px;
   padding: 2%;
 }
 
 .board {
-  height: 600px;
-  background-color: lightgrey;
+  height: 80%;
+  width: 100%;
+  background-image: url("https://www.epd.org/sites/default/files/images/Dog-Park-event.jpg");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .row {
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 100%;
   display: flex;
   justify-content: center;
 }
 
 .tile {
-  width: 30px;
-  height: 30px;
-  background-color: grey;
+  width: 10%;
+  background-color: rgba(0, 255, 0, 0.7);
   text-align: center;
   border: black 1px solid;
   margin: 0.1%;

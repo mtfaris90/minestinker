@@ -4,6 +4,7 @@ import Board from "./components/Board";
 import FlagsCounter from "./components/FlagsCounter";
 import StartMenu from "./components/StartMenu";
 import Timer from "./components/Timer";
+import Emoji from "./components/Emoji";
 
 function App() {
   const [timerActive, setTimerActive] = useState(false);
@@ -13,7 +14,7 @@ function App() {
   const [r, setR] = useState(0);
   const [c, setC] = useState(0);
   const [m, setM] = useState(0);
-  
+
 
   const startGame = (e, selected, rows, cols, mines) => {
     e.preventDefault();
@@ -58,7 +59,10 @@ function App() {
     <div className="App">
       <div className="header">
         <FlagsCounter flags={flags} />
-        <h1 className="title">Minestinker</h1>
+        <h1 className="title">
+          Minestinker
+          <Emoji symbol="💩" label="poo"/>
+          </h1>
         <Timer timerActive={timerActive} />
       </div>
       {showMenu ? <StartMenu startGame={startGame} /> : ""}
